@@ -1,0 +1,277 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+}
+
+.nav .left p,
+.nav .right p {
+    display: inline;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.nav .left p:hover,
+.nav .right p:hover {
+    color: #ffcb00;
+}
+
+.nav .right {
+    display: flex;
+    align-items: center;
+}
+
+.nav .right i {
+    margin: 0 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.nav .right button {
+    padding: 10px 15px;
+    background-color: #ffcb00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+}
+
+.nav .right button:hover {
+    background-color: #ff9800;
+}
+
+/* Main Section */
+.main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.main h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.main input {
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    max-width: 500px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.main .btn {
+    margin-top: 20px;
+}
+
+.main .btn button {
+    padding: 12px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main .req {
+    background-color: #ffcb00;
+    border: none;
+    color: #000;
+}
+
+.main .req:hover {
+    background-color: #ff9800;
+}
+
+.main button {
+    background-color: #ddd;
+    border: none;
+}
+
+.main button:hover {
+    background-color: #bbb;
+}
+
+/* Uber Ride Section */
+.uber-ride {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.uber-ride h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.go {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.auto {
+    width: 200px;
+    text-align: center;
+    margin: 15px;
+}
+
+.auto img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.auto h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.auto p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Safety Section */
+.head {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffcb00;
+    color: #fff;
+}
+
+.head h1 {
+    font-size: 2.5rem;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.img {
+    width: 45%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.img h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer .list {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer p:hover {
+    color: #ffcb00;
+}
+
+/* Download Section */
+.down {
+    background-color: #f5f5f5;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.lode {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.lode .btn {
+    text-align: center;
+}
+
+.lode .btn img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.lode .btn h3 {
+    font-size: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main input {
+        width: 80%;
+    }
+
+    .go {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .auto {
+        width: 80%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img {
+        width: 80%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .list {
+        width: auto;
+    }
+}
